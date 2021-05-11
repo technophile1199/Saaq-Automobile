@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "548937350373",
+    "project_id": "saaq-automobile",
+    "storage_bucket": "saaq-automobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548937350373:android:edc41b6e278d2f097c280c",
+        "android_client_info": {
+          "package_name": "com.example.saaq_automobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548937350373-nauct4cofuusmi3le0rvnrsnq7n0ngpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGhxmrjH3nCufio7pgI9AXKS0KXoHkbhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548937350373-nauct4cofuusmi3le0rvnrsnq7n0ngpn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

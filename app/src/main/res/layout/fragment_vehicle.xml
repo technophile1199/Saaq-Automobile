@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registering a vehicle"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What vehicle would you like to register ?"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tvtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tvBoughtVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have bought a vehicle from ..."
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgBoughtVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvBoughtVehicle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/rbIndividual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="An individual" />
+
+        <RadioButton
+            android:id="@+id/rbBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A Business" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book an Appointment"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@+id/rgBoughtVehicle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

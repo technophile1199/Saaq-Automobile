@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SAAQ-Automobile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Open navigation close</string>
+    <string name="login_username">Email</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvQueryForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questions ?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Mail to: "
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tvQueryForm"
+        />
+
+    <EditText
+        android:id="@+id/edSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Subject"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edTo"
+        />
+
+    <EditText
+        android:id="@+id/edBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Body"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edSubject"
+        />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:backgroundTint="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/edBody"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

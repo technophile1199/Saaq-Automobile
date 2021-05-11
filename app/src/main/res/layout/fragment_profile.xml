@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="265dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picture" />
+
+
+    <EditText
+        android:id="@+id/edFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="First Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/profilePic" />
+
+
+    <EditText
+        android:id="@+id/edLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Last Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edFname" />
+
+
+
+    <TextView
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="E-mail Address"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edLname" />
+
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Cell Phone"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edEmail" />
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Update"
+        app:layout_constraintTop_toBottomOf="@+id/edPhone"
+        />
+
+    <Button
+        android:id="@+id/btnBrowse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Browse Photo"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate"
+        />
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Delete"
+        app:layout_constraintTop_toBottomOf="@+id/btnBrowse"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
